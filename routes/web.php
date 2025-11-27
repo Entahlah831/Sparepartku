@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // Panggil file resources/views/home.blade.php
+    return view('home'); 
 });
