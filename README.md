@@ -26,3 +26,11 @@ Setelah membuat copy dari .env.example dari command sebelumnya ada beberapa yang
 - jangan otak atik file migration yang sudah dipush
 - buat file migrate ketika ingin mengubah tabel database
 - wajib test sendiri dulu ketika ada perubahan lalu laporkan perubahannya ke grup
+
+
+## Framework yang digunakan
+- laravel
+- bootstrap
+
+## Rencana API yang digunakan
+- midtrans sebagai gateway pembayaran
