@@ -8,6 +8,7 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 - cp .env.example .env (untuk config project).
 - php artisan key:generate  (WAJIB).
 - Php artisan serve (buat run nya).
+- untuk databasenya tinggal "php artisan migrate" tapi inget migratenya didatabase kosong jika ingin mengubah maka harus buat file migrate baru jangan ubah file migrate yang lama
 
 ## Config .env
 
@@ -22,3 +23,6 @@ Setelah membuat copy dari .env.example dari command sebelumnya ada beberapa yang
 
 ## Rules
 - Setiap hendak komit harap lapor grup terlebih dahulu atas perubahan apa yang dilakukan
+- jangan otak atik file migration yang sudah dipush
+- buat file migrate ketika ingin mengubah tabel database
+- wajib test sendiri dulu ketika ada perubahan lalu laporkan perubahannya ke grup
