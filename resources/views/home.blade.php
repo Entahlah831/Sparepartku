@@ -3,12 +3,45 @@
 @section('title', 'Halaman Utama')
 
 @section('content')
-    <div class="jumbotron">
-        <h1>Selamat Datang di Sparepartku.com</h1>
-        <p>Cari sparepart terlengkap disini.</p>
-        <a href="#" class="btn btn-primary">Belanja Sekarang</a>
-    </div>
 
-    <div class="row">
-        </div>
+<style>
+    .hero-section {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("{{ asset('images/bengkel-bg.jpg') }}");
+        background-size: cover;
+        background-position: center;
+        height: 500px; 
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="hero-section mb-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold">Selamat Datang di Bengkel Tim</h1>
+        <p class="lead mb-4">Solusi Sparepart Terlengkap dan Terpercaya untuk Kendaraan Anda</p>
+        
+        <a href="{{ route('products.index') }}" class="btn btn-warning btn-lg fw-bold px-5">
+            Belanja Sekarang ➡️
+        </a>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-md-4">
+        <h3>🚀 Pengiriman Cepat</h3>
+        <p>Bekerjasama dengan JNE & kurir terpercaya.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>💎 Barang Original</h3>
+        <p>Garansi uang kembali jika barang palsu.</p>
+    </div>
+    <div class="col-md-4">
+        <h3>💳 Pembayaran Mudah</h3>
+        <p>Support QRIS, Virtual Account via Midtrans.</p>
+    </div>
+</div>
+
 @endsection

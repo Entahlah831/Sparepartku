@@ -1,24 +1,30 @@
 <?php
-
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\User;
+use App\Models\Product;
 
 class DatabaseSeeder extends Seeder
 {
-    /**
-     * Seed the application's database.
-     *
-     * @return void
-     */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        // 1. Buat User Admin/Developer (Biar bisa login)
+        User::create([
+            'name' => 'Admin Bengkel',
+            'email' => 'admin@toko.com',
+            'password' => bcrypt('password'), // Passwordnya: password
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // 2. Buat User Random (misal 5 orang lain)
+        User::factory(5)->create();
+
+        // 3. Jalankan Seeder Kategori DULUAN (Penting karena Produk butuh Kategori)
+        $this->call([
+            CategorySeeder::class,
+        ]);
+
+        // 4. Buat 50 Produk Dummy pakai Factory
+        Product::factory(50)->create();
     }
 }

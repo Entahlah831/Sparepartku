@@ -18,6 +18,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->text('address'); // Alamat kirim
             $table->string('courier')->nullable(); // JNE
+            $table->string('courier_service')->nullable();
             $table->integer('shipping_cost')->default(0);
             $table->integer('total_price'); // Barang + Ongkir
             $table->enum('status', ['unpaid', 'pending', 'paid', 'sent', 'done', 'cancelled', 'expire'])->default('unpaid');
