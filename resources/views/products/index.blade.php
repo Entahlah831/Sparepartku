@@ -3,7 +3,7 @@
 @section('title', 'Katalog Sparepart')
 
 @section('content')
-    <h2 class="mb-4">Katalog Sparepart Terlengkap</h2>
+    <h2 class="mb-4">Katalog Sparepart</h2>
 
     <div class="row">
         @forelse($products as $product)
