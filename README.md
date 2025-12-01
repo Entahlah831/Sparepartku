@@ -5,8 +5,11 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 - git clone <link-repo>.
 - composer install.
+- npm build && npm run build
 - cp .env.example .env (untuk config project).
 - php artisan key:generate  (WAJIB).
+- php artisan migrate:fresh --seed (untuk isi database dummy)
+- php artisan storage:link (untuk link dengan folder public untuk gambar)
 - Php artisan serve (buat run nya).
 - untuk databasenya tinggal "php artisan migrate" tapi inget migratenya didatabase kosong jika ingin mengubah maka harus buat file migrate baru jangan ubah file migrate yang lama
 
@@ -20,6 +23,9 @@ Setelah membuat copy dari .env.example dari command sebelumnya ada beberapa yang
 - DB_DATABASE=nama_database_tim  <-- Ganti ini sesuai nama database
 - DB_USERNAME=root
 - DB_PASSWORD=                   <-- Isi jika ada password
+- MIDTRANS_SERVER_KEY= isi
+- MIDTRANS_CLIENT_KEY= isi
+- MIDTRANS_IS_PRODUCTION=false
 
 ## Rules
 - Setiap hendak komit harap lapor grup terlebih dahulu atas perubahan apa yang dilakukan
