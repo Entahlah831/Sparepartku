@@ -24,22 +24,22 @@
         <p class="lead mb-4">Solusi Sparepart Terlengkap dan Terpercaya untuk Kendaraan Anda</p>
         
         <a href="{{ route('products.index') }}" class="btn btn-warning btn-lg fw-bold px-5">
-            Belanja Sekarang ➡️
+            Belanja Sekarang
         </a>
     </div>
 </div>
 
 <div class="row text-center">
     <div class="col-md-4">
-        <h3>🚀 Pengiriman Cepat</h3>
+        <h3> Pengiriman Cepat</h3>
         <p>Bekerjasama dengan JNE & kurir terpercaya.</p>
     </div>
     <div class="col-md-4">
-        <h3>💎 Barang Original</h3>
+        <h3> Barang Original</h3>
         <p>Garansi uang kembali jika barang palsu.</p>
     </div>
     <div class="col-md-4">
-        <h3>💳 Pembayaran Mudah</h3>
+        <h3> Pembayaran Mudah</h3>
         <p>Support QRIS, Virtual Account via Midtrans.</p>
     </div>
 </div>

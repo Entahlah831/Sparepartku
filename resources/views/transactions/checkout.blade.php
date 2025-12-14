@@ -71,7 +71,7 @@
                         </ul>
 
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-primary btn-lg">Proses Pembayaran 💳</button>
+                            <button type="submit" class="btn btn-primary btn-lg">Proses Pembayaran </button>
                         </div>
                         <div class="text-center mt-2">
                             <a href="{{ route('carts.index') }}" class="text-decoration-none">Kembali ke Keranjang</a>

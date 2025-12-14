@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand fw-bold" href="{{ route('home') }}">Sparepartku</a>
         
@@ -21,7 +21,7 @@
                 @if(Auth::user()->email == 'admin@toko.com')
                     <li class="nav-item me-2">
                         <a class="btn btn-outline-light fw-bold" href="{{ route('admin.products.create') }}">
-                            ➕ Tambah Barang
+                            Tambah Barang
                         </a>
                     </li>
                 @endif
